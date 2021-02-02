@@ -1,7 +1,7 @@
 <html>
 <body>
-<h3>Tomcat Integration with jenkins successful.</h3>
-<h1>Jenkins User Success Stories </h1>
+<h1>Tomcat Integration with jenkins successful.</h1>
+<h3>Jenkins User Success Stories </h3>
 <p>Jenkins Is The Way is based on your stories.
   You shared how using Jenkins has helped make your builds faster,
   your pipelines more secure, and your developers and software engineers happier.
