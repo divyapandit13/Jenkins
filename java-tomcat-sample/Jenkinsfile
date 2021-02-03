@@ -2,8 +2,14 @@ pipeline {
     agent any
     stages {
         stage('Build Application') {
+        scm {
+       git("https://github.com/divyapandit13/Jenkins_Docker_Tomcat_Project.git", 'master')
+   }
+   triggers {
+       scm('* * * * * ')
+   }
             steps {
-                sh '--mvn -f java-tomcat-sample/pom.xml clean package'
+                sh 'mvn -f java-tomcat-sample/pom.xml clean package'
             }
             post {
                 success {
