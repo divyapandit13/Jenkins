@@ -2,9 +2,8 @@ pipeline {
     agent any
     stages {
         stage('Build Application') {
-           git url: 'https://github.com/divyapandit13/Jenkins_Docker_Tomcat_Project.git'
             steps {
-       sh 'mvn -f java-tomcat-sample/pom.xml clean package'
+       bat 'mvn -f java-tomcat-sample/pom.xml clean package'
            }
                
             post {
