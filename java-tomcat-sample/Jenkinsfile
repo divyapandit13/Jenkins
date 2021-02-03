@@ -4,9 +4,9 @@ pipeline {
         stage('Build Application') {
            git url: 'https://github.com/divyapandit13/Jenkins_Docker_Tomcat_Project.git'
             steps {
-
-                buildInfo = rtMaven.run pom: 'java-tomcat-sample/pom.xml', goals: 'clean package'
-            }
+       sh 'mvn -f java-tomcat-sample/pom.xml clean package'
+           }
+               
             post {
                 success {
                     echo "Now Archiving the Artifacts...."
